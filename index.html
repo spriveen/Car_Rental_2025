@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,110 +37,112 @@
         }
 
         /* Header Styles */
-     /* General Header Styling */
-.header {
-  background: #111; /* dark sleek background */
-  color: #fff;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+        /* General Header Styling */
+        .header {
+            background: #111;
+            /* dark sleek background */
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-/* Container */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
+        /* Container */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
 
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f5f5f5;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f5f5f5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.logo i {
-  margin-right: 0.5rem;
-  color: #e63946; /* accent color (red) */
-}
+        .logo i {
+            margin-right: 0.5rem;
+            color: #e63946;
+            /* accent color (red) */
+        }
 
-.logo:hover {
-  color: #e63946;
-}
+        .logo:hover {
+            color: #e63946;
+        }
 
-/* Navigation */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
+        /* Navigation */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #ddd;
-  font-weight: 500;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding-bottom: 0.2rem;
-}
+        .nav-links li a {
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 500;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 0.2rem;
+        }
 
-.nav-links li a:hover {
-  color: #fff;
-  border-bottom: 2px solid #e63946;
-}
+        .nav-links li a:hover {
+            color: #fff;
+            border-bottom: 2px solid #e63946;
+        }
 
-/* Hamburger Menu (Mobile) */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-}
+        /* Hamburger Menu (Mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+        }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #111;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: #111;
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+            }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
+            .nav-links {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
 
-  .hamburger {
-    display: block;
-  }
+            .hamburger {
+                display: block;
+            }
 
-  /* Optional: active menu toggle */
-  .nav.active {
-    display: block;
-  }
-}
+            /* Optional: active menu toggle */
+            .nav.active {
+                display: block;
+            }
+        }
 
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -453,54 +456,57 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
-<header class="header">
-    <div class="container header-container">
-        <!-- Logo -->
-        <a href="#" class="logo">
-            <i class="fas fa-car"></i>
-            <span>AutoElite</span>
-        </a>
+    <header class="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <i class="fas fa-car"></i>
+                <span>AutoElite</span>
+            </a>
 
-        <!-- Navigation -->
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-        <!-- Mobile Menu Icon -->
-        <button class="hamburger" aria-label="Toggle Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
+            <!-- Mobile Menu Icon -->
+            <button class="hamburger" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
 
     <!-- Hero Section -->
-    
+
     <section class="hero">
         <div class="container hero-content">
             <h1>Drive Your Dream Car Today</h1>
-            <p>Discover the finest selection of premium and luxury vehicles with unbeatable deals and exceptional service.</p>
+            <p>Discover the finest selection of premium and luxury vehicles with unbeatable deals and exceptional
+                service.</p>
             <a href="#featured" class="btn">Explore Cars</a>
         </div>
     </section>
 
 
     <!-- Featured Cars Section -->
-<section id="featured" class="featured">
+    <section id="featured" class="featured">
         <div class="container">
             <h2 class="section-title">Featured Vehicles</h2>
             <div class="cars-grid">
                 <!-- Car 1 -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="BMW M5" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="BMW M5" class="car-image">
                     <div class="car-info">
                         <h3>BMW M5 Competition</h3>
                         <div class="car-specs">
@@ -512,10 +518,11 @@
                         <a href="#" class="btn">View Details</a>
                     </div>
                 </div>
-                
+
                 <!-- Car 2 -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80" alt="Mercedes-Benz" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80"
+                        alt="Mercedes-Benz" class="car-image">
                     <div class="car-info">
                         <h3>Mercedes-Benz S-Class</h3>
                         <div class="car-specs">
@@ -527,10 +534,11 @@
                         <a href="#" class="btn">View Details</a>
                     </div>
                 </div>
-                
+
                 <!-- Car 3 -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Audi RS7" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Audi RS7" class="car-image">
                     <div class="car-info">
                         <h3>Audi RS7 Sportback</h3>
                         <div class="car-specs">
@@ -547,39 +555,81 @@
     </section>
 
     <!-- Services Section -->
-   
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Our Services</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Sales</h3>
+                    <p>Extensive inventory of new and pre-owned luxury vehicles with competitive pricing.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Professional maintenance and repair services performed by certified technicians.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Warranty</h3>
+                    <p>Comprehensive warranty options to protect your investment for years to come.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Financing</h3>
+                    <p>Flexible financing options tailored to your budget and requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials Section -->
-  
+
 
     <!-- Footer -->
-   
+
 
     <script>
         // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-        
+
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-        
+
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
         });
-        
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
+
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
@@ -589,4 +639,5 @@
         });
     </script>
 </body>
+
 </html>
