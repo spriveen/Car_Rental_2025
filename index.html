@@ -293,6 +293,50 @@
             margin-bottom: 1rem;
         }
 
+        /* How It Works Section */
+        .how-it-works {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            align-items: stretch;
+        }
+
+        .how-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .how-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .how-icon {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .how-card h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .how-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
         /* Testimonials Section */
         .testimonials {
             padding: 4rem 0;
@@ -555,7 +599,101 @@
     </section>
 
     <!-- Services Section -->
-    
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-car-side"></i></div>
+                    <h3>Luxury Rentals</h3>
+                    <p>Short-term and long-term rental plans featuring the latest premium makes and models. Flexible
+                        pickup and delivery options to suit your schedule.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Chauffeur Services</h3>
+                    <p>Professional chauffeurs available upon request for events, airport transfers, and corporate
+                        travel. Arrive comfortably and on time.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Full-service maintenance, detailing, and roadside assistance to keep your vehicle in peak
+                        condition while it's with us.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-gift"></i></div>
+                    <h3>Custom Packages</h3>
+                    <p>Create bespoke rental packages for weddings, photo shoots, or corporate needs. Contact our team
+                        to design the perfect experience.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works (longer section) -->
+    <section id="how" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p style="text-align:center; color:var(--gray); max-width:900px; margin:0.5rem auto 2rem;">We've kept the
+                process simple so you can get behind the wheel quickly. Below are the six easy steps from browsing to
+                returning your vehicle.</p>
+
+            <div class="how-grid">
+                <div class="how-card">
+                    <div class="how-icon"><i class="fas fa-search"></i></div>
+                    <h4>1. Browse Inventory</h4>
+                    <p>Explore our curated selection of premium vehicles. Filter by model, price, fuel type or features
+                        to find the perfect match.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h4>2. Choose Dates</h4>
+                    <p>Select pickup and return dates. We offer hourly, daily, and monthly rates with transparent
+                        pricing and no hidden fees.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-icon"><i class="fas fa-file-signature"></i></div>
+                    <h4>3. Book Securely</h4>
+                    <p>Complete your reservation through our secure booking flow. You can add extras like GPS, child
+                        seats, or chauffeur options.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-icon"><i class="fas fa-id-card"></i></div>
+                    <h4>4. Pickup or Delivery</h4>
+                    <p>Pick up your vehicle at our location or choose our delivery service. Our team completes a quick
+                        orientation and vehicle inspection with you.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-icon"><i class="fas fa-route"></i></div>
+                    <h4>5. Drive with Confidence</h4>
+                    <p>Enjoy your trip with 24/7 roadside assistance and optional insurance coverage. Need support? Our
+                        concierge is just a phone call away.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-icon"><i class="fas fa-undo-alt"></i></div>
+                    <h4>6. Return or Extend</h4>
+                    <p>Return at the scheduled time or extend your rental online. We perform a quick check, settle any
+                        charges, and ensure a smooth wrap-up.</p>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:2rem;">
+                <a href="#featured" class="btn">View Available Cars</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials Section -->
 
@@ -565,33 +703,39 @@
             <div class="testimonial-grid">
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"AutoElite made my dream of owning a luxury car a reality. Their service was exceptional from start to finish."</p>
+                    <p class="testimonial-text">"AutoElite made my dream of owning a luxury car a reality. Their service
+                        was exceptional from start to finish."</p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Johnson" class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Johnson"
+                            class="author-avatar">
                         <div class="author-info">
                             <h4>Michael Johnson</h4>
                             <p>BMW M5 Owner</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"The team at AutoElite provided outstanding support throughout the entire purchasing process. Highly recommended!"</p>
+                    <p class="testimonial-text">"The team at AutoElite provided outstanding support throughout the
+                        entire purchasing process. Highly recommended!"</p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams" class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams"
+                            class="author-avatar">
                         <div class="author-info">
                             <h4>Sarah Williams</h4>
                             <p>Mercedes S-Class Owner</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Testimonial 3 -->
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"I've purchased multiple vehicles from AutoElite and each experience has been better than the last. True professionals."</p>
+                    <p class="testimonial-text">"I've purchased multiple vehicles from AutoElite and each experience has
+                        been better than the last. True professionals."</p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Robert Chen" class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Robert Chen"
+                            class="author-avatar">
                         <div class="author-info">
                             <h4>Robert Chen</h4>
                             <p>Audi RS7 Owner</p>
@@ -600,10 +744,11 @@
                 </div>
             </div>
         </div>
-    </section>
+            
+    </section>
 
     <!-- Footer -->
-     <footer id="contact">
+    <footer id="contact">
         <div class="container">
             <div class="footer-grid">
                 <!-- Column 1 -->
@@ -617,7 +762,7 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <!-- Column 2 -->
                 <div class="footer-column">
                     <h3>Quick Links</h3>
@@ -629,7 +774,7 @@
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 3 -->
                 <div class="footer-column">
                     <h3>Contact Info</h3>
@@ -641,7 +786,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2023 AutoElite. All rights reserved.</p>
             </div>
